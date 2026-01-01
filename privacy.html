@@ -17,6 +17,7 @@
     main{max-width:960px;margin:16px auto 56px;padding:0 20px}
     section{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin:16px 0}
     h2{font-size:20px;margin:0 0 12px}
+    h3{font-size:16px;margin:16px 0 8px}
     ul{padding-left:22px;margin:8px 0}
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
@@ -27,7 +28,7 @@
 <body>
   <header>
     <h1>Privacy Policy –「StudyBank – 勉強貯金」</h1>
-    <div class="updated"><strong>最終更新日：</strong>2025-10-16</div>
+    <div class="updated"><strong>最終更新日：</strong>2026-01-01</div>
   </header>
 
   <main>
@@ -46,14 +47,11 @@
     <section id="collect">
       <h2>2. 収集する情報</h2>
       <p>
-        本アプリはアカウント登録や外部サーバーへの送信を行わず、学習データは<strong>すべて端末内（UserDefaults 等）に保存</strong>されます。
+        本アプリはアカウント登録や当方の外部サーバーへの学習データ送信を行わず、学習データは<strong>すべて端末内（UserDefaults 等）に保存</strong>されます。
       </p>
       <p>
         仮想カードや通知・モチベーション表示・占いの演出のために<strong>ユーザー名</strong>を入力いただく場合がありますが、
         <strong>この情報も端末内にのみ保存され、当方のサーバー等へ送信されることはありません。</strong>
-      </p>
-      <p>
-        ただし、広告配信のために組み込まれている <strong>Google AdMob（Google LLC）</strong> の SDK が、広告表示・効果測定のために必要な情報を取得する場合があります。
       </p>
 
       <h3>端末内に保存されるデータ（当方サーバーへ送信しません）</h3>
@@ -70,10 +68,26 @@
         ※ 上記データは「アプリ削除」または「アプリ内のリセット操作」により端末から消去されます。
       </p>
 
+      <h3>第三者 SDK による取得（広告・分析）</h3>
+      <p>
+        本アプリには、広告配信のため <strong>Google AdMob（Google LLC）</strong> の SDK が組み込まれており、広告表示・効果測定・不正対策等のために必要な情報を取得する場合があります。
+      </p>
+      <p>
+        また、本アプリではサービス改善および利用状況の分析のため <strong>Firebase Analytics（Google LLC）</strong> を使用します。
+        Firebase Analytics は、アプリの利用状況に関する情報（例：アプリ起動、画面の閲覧、操作に関する統計情報等）を収集する場合があります。
+        これらの情報はサービス改善の目的で利用されます。
+      </p>
+
       <h3>広告 SDK（AdMob）が取得し得る情報の例</h3>
       <ul>
         <li>端末情報、IP アドレス、アプリ内の広告表示/クリックに関する情報 等</li>
         <li>地域法令に基づく同意ステータス（EEA/UK 等）</li>
+      </ul>
+
+      <h3>分析 SDK（Firebase Analytics）が取得し得る情報の例</h3>
+      <ul>
+        <li>アプリの利用状況（例：起動、画面閲覧、操作イベント、セッション情報 等）</li>
+        <li>端末に関する情報（例：OS・端末モデル等の一般的な技術情報）</li>
       </ul>
 
       <p><strong>重要：</strong>本アプリは<strong>非パーソナライズ広告（NPA）</strong>のみを表示します。
@@ -83,6 +97,7 @@
       <ul>
         <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
         <li><a href="https://support.google.com/admob" target="_blank" rel="noopener">AdMob のデータに関する情報</a></li>
+        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a></li>
       </ul>
     </section>
 
@@ -104,6 +119,7 @@
         <li>アプリの基本機能提供（計測・履歴・ランク・ご褒美ストア・占い等）</li>
         <li>ローカル通知の配信（勉強リマインダー、復帰の促し等）</li>
         <li>広告の配信および効果測定（周波数制御・不正対策等：AdMob）</li>
+        <li>利用状況の分析およびサービス改善（Firebase Analytics）</li>
         <li>法令遵守・セキュリティ対策</li>
       </ul>
     </section>
@@ -120,7 +136,10 @@
     <section id="sharing">
       <h2>6. データの共有</h2>
       <p>当方はユーザー個人を特定できるデータを<strong>第三者に販売しません</strong>。</p>
-      <p>広告に関しては、<strong>Google 等の第三者</strong>が SDK を通じてデータを取得・利用します（上記ポリシー参照）。</p>
+      <p>
+        ただし、本アプリに組み込まれた第三者サービス（<strong>Google AdMob</strong>、<strong>Firebase Analytics</strong> 等）が、
+        各サービスの提供・運用（広告配信、効果測定、分析、セキュリティ等）の目的でデータを取得・利用する場合があります（上記ポリシー参照）。
+      </p>
     </section>
 
     <section id="legal">
@@ -128,7 +147,7 @@
       <ul>
         <li><strong>契約の履行：</strong>アプリの基本機能提供</li>
         <li><strong>同意：</strong>地域法令が求める広告保存/測定に関する同意（※パーソナライズではありません）</li>
-        <li><strong>正当な利益：</strong>不正防止・サービス運営のための最小限処理</li>
+        <li><strong>正当な利益：</strong>不正防止・サービス改善のための最小限処理（分析を含む）</li>
       </ul>
     </section>
 
@@ -136,7 +155,7 @@
       <h2>8. データの保管期間</h2>
       <ul>
         <li><strong>端末内データ：</strong>ユーザーが削除するまで（アプリ削除/リセットで消去）</li>
-        <li><strong>広告関連データ：</strong>Google のポリシー・設定に従います</li>
+        <li><strong>広告・分析関連データ：</strong>Google のポリシー・設定に従います</li>
       </ul>
     </section>
 
@@ -152,7 +171,7 @@
 
     <section id="transfer">
       <h2>11. 国際データ移転</h2>
-      <p>広告サービス（Google）が国外でデータを処理する場合があります。詳細は各サービスのポリシーをご確認ください。</p>
+      <p>広告サービスおよび分析サービス（Google）が国外でデータを処理する場合があります。詳細は各サービスのポリシーをご確認ください。</p>
     </section>
 
     <section id="rights">
@@ -186,7 +205,7 @@
         運営者：<strong>KZ Studio</strong><br />
         メール：<a href="mailto:kzs0studio@gmail.com">kzs0studio@gmail.com</a>
       </p>
-      <p>© 2025 KZ Studio</p>
+      <p>© 2026 KZ Studio</p>
     </section>
   </main>
 
